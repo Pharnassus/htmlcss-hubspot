@@ -1,0 +1,82 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+
+.wall{
+  /* margin: auto; */
+  width: 100%;
+  height: 100vh;
+  background-color: #F5F8FA;
+}
+
+#top-header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* height: 150px; */
+  background-color: orange;
+  border-bottom: 1px solid black;
+}
+.container{
+  margin: auto;
+  width: 68%;
+  height: 80px;
+  background-color: lightgray;
+}
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+li.top-left{
+  float: left;
+  padding-right: 10px;
+}
+li.top-right{
+  float: right;
+  padding-left: 10px;
+}
+#top-h li, #bottom-h li, .bottom-left{
+  line-height: 80px;
+  vertical-align: middle;
+}
+
+#bottom-header{
+  margin: 80px auto 0 auto;
+  width: 68%;
+  height: 80px;
+  background-color: yellow;
+}
+.bottom-left{
+  float: left;
+}
+li.bottom-right{
+  float: right;
+  padding-left: 10px;
+}
+
+#jumbotron{
+  background-image: url("../img/jumbotron.png");
+  width: 100%;
+  height: 695px;
+}
+#jumbo-section{
+  margin: 0 0 0 16%;
+  width: 25%;
+  height: 425px;
+  background-color: orange;
+}
