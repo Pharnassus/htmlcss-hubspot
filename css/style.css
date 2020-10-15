@@ -8,18 +8,24 @@
   display: table;
   clear: both;
 }
+body{
+  background-color: #F4F9FD;
+  /* background-color: white; */
+}
 li{
   list-style: none;
 }
 a{
   text-decoration: none;
 }
-
+main{
+  background-color: #F4F9FD;
+}
 .wall{
   /* margin: auto; */
   width: 100%;
-  height: 100vh;
-  background-color: #F5F8FA;
+  /* height: 100vh; */
+  /* background-color: white; */
 }
 
 #top-header{
@@ -28,19 +34,19 @@ a{
   left: 0;
   width: 100%;
   /* height: 150px; */
-  background-color: orange;
+  background-color: #F4F9FD;
   border-bottom: 1px solid black;
-}
-.container{
-  margin: auto;
-  width: 68%;
-  height: 80px;
-  background-color: lightgray;
 }
 .clearfix::after{
   content: "";
   display: table;
   clear: both;
+}
+.container{
+  margin: auto;
+  width: 68%;
+  height: 80px;
+  background-color: #F4F9FD;
 }
 li.top-left{
   float: left;
@@ -55,11 +61,14 @@ li.top-right{
   vertical-align: middle;
 }
 
+.bg-bottom-h{
+  background-color: white;
+}
 #bottom-header{
   margin: 80px auto 0 auto;
   width: 68%;
   height: 80px;
-  background-color: yellow;
+  background-color: white;
 }
 .bottom-left{
   float: left;
@@ -70,6 +79,7 @@ li.bottom-right{
 }
 
 #jumbotron{
+  background-color: #F4F9FD;
   background-image: url("../img/jumbotron.png");
   width: 100%;
   height: 695px;
@@ -78,7 +88,7 @@ li.bottom-right{
   margin: 0 0 0 16%;
   width: 25%;
   height: 425px;
-  background-color: orange;
+  background-color: pink;
   /* padding: 20px 0; */
 }
 
@@ -94,7 +104,7 @@ li.bottom-right{
   height: 180px;
   background-size: contain;
   background-repeat: no-repeat;
-  margin: 7% auto 1% auto;
+  margin: 0 auto 1% auto;
 }
 
 #section2{
@@ -129,8 +139,44 @@ li.bottom-right{
 }
 
 #column{
-  background-color: gray;
+  /* background-color: gray; */
   width: 68%;
-  height: 600px;
+  /* height: 600px; */
   margin: 0 auto 7%;
+}
+#column div{
+  background-color: white;
+  width: 30%;
+  height: 600px;
+  float: left;
+
+}
+.column1{
+
+}
+.column2{
+  margin: 0 5%;
+}
+.column3{
+
+}
+
+#section4{
+  background-color: blue;
+  width: 100%;
+  height: 650px;
+  margin-bottom: 7%;
+}
+
+#section5{
+  background-color: #F4F9FD;
+  width: 100%;
+  height: 650px;
+  margin-bottom: 7%;
+}
+
+.bg-footer{
+  background-color: #32495B;
+  width: 100%;
+  height: 650px;
 }
