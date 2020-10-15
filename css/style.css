@@ -79,4 +79,58 @@ li.bottom-right{
   width: 25%;
   height: 425px;
   background-color: orange;
+  /* padding: 20px 0; */
+}
+
+#section1{
+  width: 68%;
+  margin: auto;
+  text-align: center;
+  margin: 7% auto 6% auto;
+}
+.section1-img{
+  background-image: url("../img/integrations.png");
+  width: 250px;
+  height: 180px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 7% auto 1% auto;
+}
+
+#section2{
+  background-color: green;
+  width: 68%;
+  height: 300px;
+  margin: 0 auto 4%;
+}
+.section2-content1{
+  background-color: blue;
+  height: 100%;
+  width: 35%;
+}
+.section2-content1 button{
+  margin: 0 43%
+}
+.section2-content2{
+  background-color: lightblue;
+  height: 100%;
+  width: 65%;
+}
+.section2-img{
+  background-image: url("../img/crm.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 170px;
+  height: 150px;
+  margin: 20% auto 0;
+}
+.section2-content1, .section2-content2{
+  float: left;
+}
+
+#column{
+  background-color: gray;
+  width: 68%;
+  height: 600px;
+  margin: 0 auto 7%;
 }
