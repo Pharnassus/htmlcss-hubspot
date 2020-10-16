@@ -8,6 +8,11 @@
   display: table;
   clear: both;
 }
+.box-layout{
+box-shadow: 3px 3px 15px 5px #E6ECF1;
+border: 2px solid #E6ECF1;
+border-radius: 7px;
+}
 body, main{
   /* background-color: white; */
   background-color: #F4F9FD;
@@ -25,6 +30,10 @@ h1{
   padding-top: 30px;
   font-size: 45px;
 }
+h2{
+  font-size: 27px;
+  font-weight: 700;
+}
 p{
   line-height: 1.8;
   margin: 30px 0;
@@ -34,8 +43,7 @@ li, a{
   list-style: none;
   text-decoration: none;
 }
-
-
+/* ----------------------------------------------------------------- */
 /* <!-- parte fissa dell'header --> */
 #top-header{
   position: fixed;
@@ -97,7 +105,7 @@ a.btn-white:hover{
   color: #00A4BD;
 }
 /* <!-- /parte fissa dell'header --> */
-
+/* ----------------------------------------------------------------- */
 /* <!-- seconda parte header --> */
 .bg-bottom-header{
   background-color: white;
@@ -123,7 +131,7 @@ li.bottom-right{
   margin-left: 5px;
 }
 /* <!-- /seconda parte header --> */
-
+/* ----------------------------------------------------------------- */
 /* <!-- jumbotron --> */
 #jumbotron{
   position: relative;
@@ -159,13 +167,13 @@ p.small{
   padding: 20px 30px;
 }
 /* <!-- /jumbotron --> */
-
+/* ----------------------------------------------------------------- */
 /* <!-- prima sezione del main --> */
 #section1{
-  width: 68%;
+  width: 55%;
   margin: auto;
   text-align: center;
-  margin: 7% auto 6% auto;
+  margin: 7% auto 4% auto;
 }
 .section1-img{
   background-image: url("../img/integrations.png");
@@ -176,40 +184,64 @@ p.small{
   margin: 0 auto 1% auto;
 }
 /* <!-- /prima sezione del main --> */
-
+/* ----------------------------------------------------------------- */
 /* <!-- seconda sez del main --> */
 #section2{
-  background-color: green;
+  background-color: white;
   width: 68%;
   height: 300px;
-  margin: 0 auto 4%;
+  margin: 0 auto 3%;
 }
-.section2-content1{
-  background-color: blue;
+#section2-content1{
+  /* background-color: blue; */
   height: 100%;
   width: 35%;
 }
-.section2-content1 button{
-  margin: 0 43%
-}
-.section2-content2{
-  background-color: lightblue;
-  height: 100%;
-  width: 65%;
+#section2-content1, #section2-content2{
+  float: left;
 }
 .section2-img{
   background-image: url("../img/crm.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 170px;
-  height: 150px;
-  margin: 20% auto 0;
+  width: 140px;
+  height: 120px;
+  margin: 15% auto 0;
 }
-.section2-content1, .section2-content2{
-  float: left;
+#section2-content1 .btn{
+  padding: 20px 30px;
+  margin: 0 87px;
+}
+#section2-content2{
+  /* background-color: lightblue; */
+  padding: 4% 0;
+  height: 100%;
+  width: 65%;
+}
+/* ----------------------------------------- */
+  /* pomeriggio perso solo su sta cosa.... */
+h3{
+  display: flex;
+  flex-direction: row;
+}
+#section2-content2 h3::after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 2px solid #899397;
+  margin: auto 40px;
+}
+/* ----------------------------------------- */
+.check-circle li{
+  display: inline-block;
+  margin: 30px 20px 0 0;
+  font-weight: 500;
+}
+.check-circle i{
+  color: #FE775A;
+  margin-right: 7px;
 }
 /* <!-- /seconda sez del main --> */
-
+/* ----------------------------------------------------------------- */
 /* <!-- terza sezione del main --> */
 #column{
   /* background-color: gray; */
@@ -234,7 +266,7 @@ p.small{
 
 }
 /* <!-- /terza sezione del main --> */
-
+/* ----------------------------------------------------------------- */
 /* <!-- quarta sezione del main --> */
 #section4{
   background-color: blue;
@@ -243,7 +275,7 @@ p.small{
   margin-bottom: 7%;
 }
 /* <!-- /quarta sezione del main --> */
-
+/* ----------------------------------------------------------------- */
 /* <!-- quinta sezione del main --> */
 #section5{
   background-color: #F4F9FD;
@@ -252,7 +284,7 @@ p.small{
   margin-bottom: 7%;
 }
 /* <!-- /quinta sezione del main --> */
-
+/* ----------------------------------------------------------------- */
 /* <!-- footer --> */
 .bg-footer{
   background-color: #32495B;
