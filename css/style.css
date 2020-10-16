@@ -3,50 +3,59 @@
   margin: 0;
   padding: 0;
 }
-#clearfix::after{
-  content: "";
-  display: table;
-  clear: both;
-}
-body{
-  background-color: #F4F9FD;
-  /* background-color: white; */
-}
-li{
-  list-style: none;
-}
-a{
-  text-decoration: none;
-}
-main{
-  background-color: #F4F9FD;
-}
-.wall{
-  /* margin: auto; */
-  width: 100%;
-  /* height: 100vh; */
-  /* background-color: white; */
-}
-
-#top-header{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  /* height: 150px; */
-  background-color: #F4F9FD;
-  border-bottom: 1px solid black;
-}
 .clearfix::after{
   content: "";
   display: table;
   clear: both;
 }
-.container{
-  margin: auto;
-  width: 68%;
-  height: 80px;
+body, main{
+  /* background-color: white; */
   background-color: #F4F9FD;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0px;
+  color: #32495B;
+}
+header, a{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0px;
+  color: #32495B;
+}
+h1{
+  padding-top: 30px;
+  font-size: 45px;
+}
+p{
+  line-height: 1.8;
+  margin: 30px 0;
+  font-weight: 500;
+}
+li, a{
+  list-style: none;
+  text-decoration: none;
+}
+
+
+/* <!-- parte fissa dell'header --> */
+#top-header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  /* height: 150px; */
+  background-color: #F4F9FD;
+  border-bottom: 1px solid black;
+}
+.container{
+  margin: 0 auto;
+  width: 68%;
+  height: 100%;
+  background-color: #F4F9FD;
+}
+#top-h li, #bottom-h li, .bottom-left{
+  line-height: 79px;
+  vertical-align: middle;
 }
 li.top-left{
   float: left;
@@ -54,14 +63,43 @@ li.top-left{
 }
 li.top-right{
   float: right;
-  padding-left: 10px;
+  padding-left: 15px;
 }
-#top-h li, #bottom-h li, .bottom-left{
-  line-height: 80px;
-  vertical-align: middle;
+  /* sezione pulsanti */
+a.btn{
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid #FE775A;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 14px;
+  text-decoration: none;
 }
+a.btn:hover{
+  text-decoration: none;
+}
+a.btn-orange{
+  background-color: #FE775A;
+  color: white;
+}
+a.btn-orange:hover{
+  background-color: rgba(254, 119, 90, 0.8);
+}
+a.btn-white{
+  background-color: white;
+  color: #FE775A;
+}
+a.btn-white:hover{
+  background-color: rgba(255, 255, 255, 0.1);
+}
+  /* /sezione pulsanti */
+.search-icon{
+  color: #00A4BD;
+}
+/* <!-- /parte fissa dell'header --> */
 
-.bg-bottom-h{
+/* <!-- seconda parte header --> */
+.bg-bottom-header{
   background-color: white;
 }
 #bottom-header{
@@ -70,28 +108,59 @@ li.top-right{
   height: 80px;
   background-color: white;
 }
-.bottom-left{
+#logo{
   float: left;
+  width: 100px;
+  height: 29px;
+  margin: 25px 0;
 }
 li.bottom-right{
   float: right;
   padding-left: 10px;
 }
+.bottom-right a{
+  margin-right: 2px;
+  margin-left: 5px;
+}
+/* <!-- /seconda parte header --> */
 
+/* <!-- jumbotron --> */
 #jumbotron{
-  background-color: #F4F9FD;
-  background-image: url("../img/jumbotron.png");
+  position: relative;
+  background-color: #FFF6EF;
   width: 100%;
   height: 695px;
+  background-image: url("../img/jumbotron.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+#jumbotron::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 77px;
+  background-color: #A5E8E0;
+  border-top: 3px solid #33475C;
+  border-bottom: 3px solid #33475C;
 }
 #jumbo-section{
   margin: 0 0 0 16%;
-  width: 25%;
-  height: 425px;
-  background-color: pink;
+  width: 30%;
+  /* height: 425px; */
+  /* background-color: pink; */
   /* padding: 20px 0; */
 }
+p.small{
+  font-size: 12px;
+}
+#jumbo-section a{
+  padding: 20px 30px;
+}
+/* <!-- /jumbotron --> */
 
+/* <!-- prima sezione del main --> */
 #section1{
   width: 68%;
   margin: auto;
@@ -106,7 +175,9 @@ li.bottom-right{
   background-repeat: no-repeat;
   margin: 0 auto 1% auto;
 }
+/* <!-- /prima sezione del main --> */
 
+/* <!-- seconda sez del main --> */
 #section2{
   background-color: green;
   width: 68%;
@@ -137,7 +208,9 @@ li.bottom-right{
 .section2-content1, .section2-content2{
   float: left;
 }
+/* <!-- /seconda sez del main --> */
 
+/* <!-- terza sezione del main --> */
 #column{
   /* background-color: gray; */
   width: 68%;
@@ -160,23 +233,30 @@ li.bottom-right{
 .column3{
 
 }
+/* <!-- /terza sezione del main --> */
 
+/* <!-- quarta sezione del main --> */
 #section4{
   background-color: blue;
   width: 100%;
   height: 650px;
   margin-bottom: 7%;
 }
+/* <!-- /quarta sezione del main --> */
 
+/* <!-- quinta sezione del main --> */
 #section5{
   background-color: #F4F9FD;
   width: 100%;
   height: 650px;
   margin-bottom: 7%;
 }
+/* <!-- /quinta sezione del main --> */
 
+/* <!-- footer --> */
 .bg-footer{
   background-color: #32495B;
   width: 100%;
   height: 650px;
 }
+/* <!-- /footer --> */
