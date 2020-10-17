@@ -57,7 +57,7 @@ li, a{
 }
 .container{
   margin: 0 auto;
-  width: 68%;
+  width: 70%;
   height: 100%;
   background-color: #F4F9FD;
 }
@@ -112,7 +112,7 @@ a.btn-white:hover{
 }
 #bottom-header{
   margin: 80px auto 0 auto;
-  width: 68%;
+  width: 70%;
   height: 80px;
   background-color: white;
 }
@@ -154,11 +154,14 @@ li.bottom-right{
   border-bottom: 3px solid #33475C;
 }
 #jumbo-section{
-  margin: 0 0 0 16%;
-  width: 30%;
+  margin: auto;
+  width: 70%;
   /* height: 425px; */
   /* background-color: pink; */
   /* padding: 20px 0; */
+}
+.jumbo-text{
+  width: 50%;
 }
 p.small{
   font-size: 12px;
@@ -188,7 +191,7 @@ p.small{
 /* <!-- seconda sez del main --> */
 #section2{
   background-color: white;
-  width: 68%;
+  width: 70%;
   height: 300px;
   margin: 0 auto 3%;
 }
@@ -246,12 +249,12 @@ p.small{
 #column{
   /* background-color: gray; */
   /* height: 600px; */
-  width: 68%;
+  width: 70%;
   margin: 0 auto 4%;
 }
 #column div{
   background-color: white;
-  width: 30%;
+  width: 31%;
   height: 600px;
   float: left;
   padding: 3%;
@@ -268,7 +271,7 @@ p.small{
 }
 #column p{
   text-align: center;
-  font-size: 12.5px;
+  font-size: 12.2px;
   font-weight: 600;
   border-bottom: 2px solid #899397;
   padding-bottom: 50px;
@@ -285,23 +288,71 @@ p.small{
 #column a{
   padding: 20px 30px;
   display: block;
-  margin: 40px 36px 0;
+  margin: 55px 36px 0;
 }
 /* divertiamoci coi selettori ahahah */
 #column > .box-layout > ul > li > i{
   color: #FE775A;
 }
 .column2{
-  margin: 0 5%;
+  margin: 0 3%;
 }
 /* <!-- /terza sezione del main --> */
 /* ----------------------------------------------------------------- */
 /* <!-- quarta sezione del main --> */
 #section4{
-  background-color: blue;
+  background-image: linear-gradient(to top right, #00A7BA, #00BBA8);
+  color: white;
   width: 100%;
   height: 650px;
   margin-bottom: 7%;
+}
+.section-gradient{
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  padding: 3% 0;
+}
+.gradient-table{
+  border-collapse: collapse;
+  width: 100%;
+}
+.gradient-table td{
+  width: 24%;
+  text-align: center;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+}
+.gradient-table img{
+  display: block;
+  margin: 18px auto 0;
+  width: 120px;
+  height: 33px;
+}
+.gradient-table p{
+  margin: 4px 0;
+}
+.gradient-table p.numbers{
+  display: inline-block;
+  font-size: 40px;
+  font-weight: 700;
+  /* margin-top: 15px; */
+}
+p span{
+  font-size: 30px;
+  font-weight: 400;
+  vertical-align: middle;
+  padding-left: 5px;
+}
+.gradient-table p.text{
+  font-size: 12px;
+  margin-bottom: 18px;
+}
+#box-left {
+  border-left: none;
+}
+#box-bottom td{
+  border-bottom: none;
 }
 /* <!-- /quarta sezione del main --> */
 /* ----------------------------------------------------------------- */
