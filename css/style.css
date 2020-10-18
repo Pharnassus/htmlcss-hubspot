@@ -196,6 +196,7 @@ p.small{
   margin: 0 auto 3%;
 }
 #section2-content1{
+  position: relative;
   /* background-color: blue; */
   height: 100%;
   width: 35%;
@@ -211,9 +212,13 @@ p.small{
   height: 120px;
   margin: 15% auto 0;
 }
-#section2-content1 .btn{
-  padding: 20px 30px;
-  margin: 0 87px;
+#section2-content1 a{
+  position: absolute;
+  float: none;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px 35px;
 }
 #section2-content2{
   /* background-color: lightblue; */
@@ -253,6 +258,7 @@ p.small{
   margin: 0 auto 4%;
 }
 #column div{
+  position: relative;
   background-color: white;
   width: 31%;
   height: 600px;
@@ -287,8 +293,11 @@ p.small{
 }
 #column a{
   padding: 20px 30px;
-  display: block;
-  margin: 55px 36px 0;
+  float: none;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 /* divertiamoci coi selettori ahahah */
 #column > .box-layout > ul > li > i{
@@ -305,7 +314,7 @@ p.small{
   color: white;
   width: 100%;
   height: 650px;
-  margin-bottom: 7%;
+  margin-bottom: 4%;
 }
 .section-gradient{
   text-align: center;
@@ -361,7 +370,86 @@ p span{
   background-color: #F4F9FD;
   width: 100%;
   height: 650px;
-  margin-bottom: 7%;
+  margin-bottom: 4%;
+}
+#section5 .girl-pic-section{
+  /* background: gray; */
+  height: 650px;
+  width: 70%;
+  margin: auto;
+  /* padding: 3% 0; */
+}
+#section5 .partners{
+  /* background: lightgray; */
+  height: 200px;
+  width: 88%;
+  margin: auto;
+}
+.partners > .left-partners{
+  float: left;
+  /* background: darkgray; */
+  height: 200px;
+  width: 220px;
+}
+.left-partners h2{
+  font-size: 40px;
+}
+.left-partners p{
+  font-size: 14px;
+}
+.partners > .right-partners{
+  float: right;
+  /* background: darkgray; */
+  height: 120px;
+  width: 500px;
+}
+.right-partners .partners-logo{
+  position: relative;
+  float: left;
+  width: 125px;
+  height: 60px;
+}
+.right-partners img{
+  position: absolute;
+  float: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 110px;
+}
+#section5 .left-girl-pic{
+  float: left;
+  /* background: lime; */
+  width: 490px;
+  height: 390px;
+  margin-top: 50px;
+}
+.left-girl-pic h2{
+  font-size: 27px;
+}
+.left-girl-pic p{
+  font-size: 14px;
+  font-weight: 600;
+}
+.left-girl-pic a{
+  padding: 20px 30px;
+  margin-top: 30px;
+}
+.left-girl-pic > p:last-child{
+  font-size: 11px;
+  margin-top: 60px;
+}
+#section5 .right-girl-pic{
+  float: right;
+  /* background: lime; */
+  width: 400px;
+  height: 390px;
+  margin-top: 18px;
+}
+.right-girl-pic img{
+  float: right;
+  width: 350px;
+  height: 390px;
 }
 /* <!-- /quinta sezione del main --> */
 /* ----------------------------------------------------------------- */
