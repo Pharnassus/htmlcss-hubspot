@@ -357,7 +357,7 @@ p span{
   font-size: 12px;
   margin-bottom: 18px;
 }
-#box-left {
+.box-left {
   border-left: none;
 }
 #box-bottom td{
