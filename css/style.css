@@ -104,6 +104,74 @@ a.btn-white:hover{
 .search-icon{
   color: #00A4BD;
 }
+
+#helper{
+  /* background: gray; */
+  width: 250px;
+  height: 250px;
+  padding-top: 30px;
+  position: fixed;
+  bottom: 3%;
+  right: 2%;
+  z-index: 2;
+}
+.box-helper{
+  background: #F4F9FD;
+  width: 235px;
+  height: 118px;
+  float: right;
+  position: relative;
+  box-shadow: 3px 3px 15px 5px #32495B;
+  border: 2px solid #32495B;
+  border-radius: 7px;
+}
+.box-helper img{
+  width: 50px;
+  height: 50px;
+  border: 2px solid #32495B;
+  border-radius: 50%;
+  box-shadow: 1px 1px 20px 2px #32495B;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.box-helper i{
+  font-size: 23px;
+  color: #687786;
+  float: right;
+  padding: 8px;
+}
+.box-helper > .text-helper > p > span{
+  font-size: 15px;
+  vertical-align: baseline;
+  padding: 0px;
+}
+.box-helper p{
+  padding: 0px 15px;
+  color: #32495B;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+}
+.btn-helper{
+  float: right;
+  background: #32495B;
+  width: 60px;
+  height: 60px;
+  margin-top: 25px;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: relative;
+}
+.btn-helper i{
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 /* <!-- /parte fissa dell'header --> */
 /* ----------------------------------------------------------------- */
 /* <!-- seconda parte header --> */
@@ -420,7 +488,7 @@ p span{
 #section5 .left-girl-pic{
   float: left;
   /* background: lime; */
-  width: 490px;
+  width: 410px;
   height: 390px;
   margin-top: 50px;
 }
@@ -442,7 +510,7 @@ p span{
 #section5 .right-girl-pic{
   float: right;
   /* background: lime; */
-  width: 400px;
+  width: 351px;
   height: 390px;
   margin-top: 18px;
 }
